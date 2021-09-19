@@ -70,6 +70,11 @@ $ sudo apt install graphviz -y
 $ pip install graphviz
 ```
 
+#### Gallery
+
+* <https://graphviz.org/gallery/>
+
+
 ### matplotlib
 
 ### seaborn

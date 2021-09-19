@@ -1,0 +1,22 @@
+digraph {
+    rankdir="LR"
+    node[fontsize=10 shape=box, style=rounded, shadow_offset=7, shadow_blur=5]
+    edge [fontsize=10]
+
+    start [label="Data Vizualization\nwith Python"]
+    types [label="Types"]
+    library [label="Library"]
+
+    linechart [label="linecahrt"]
+    
+    matplotlib [label="matplotlib"]
+
+
+    start -> types
+    start -> library
+
+    types -> linechart
+
+    library -> matplotlib    
+
+}

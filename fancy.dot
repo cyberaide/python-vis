@@ -1,0 +1,68 @@
+digraph tree
+{
+
+    charset="latin1";
+    fixedsize=true;
+    node [style="rounded,filled", width=0, height=0, shape=box, fillcolor="#E5E5E5", concentrate=true]
+
+    a_dir_1 [label="Software-Qualität" shape=box, width=3]
+
+    {rank=same
+      a_point_1 [shape=point]
+      b_dir_1 [label="Produktqualität", width=3]
+    }
+    a_dir_1 -> a_point_1 [arrowhead=none]
+    a_point_1 -> b_dir_1
+
+    {rank=same
+      b_point_1 [shape=point]
+      c_dir_1 [label="Konstruktive Qualitätssicherung", width=3]
+    }
+    b_point_1 -> c_dir_1
+    b_dir_1 -> b_point_1 [arrowhead=none]
+
+    {rank=same
+    c_point_1 [shape=point]
+    d_dir_1 [label="Software-Richtlinien", width=3]
+    }
+    c_point_1 -> d_dir_1
+
+    {rank=same
+      c_point_2 [shape=point]
+      d_dir_2 [label="Typisierung\l", width=3]
+    }
+    c_point_2 -> d_dir_2
+
+    {rank=same
+      c_point_3 [shape=point]
+      d_dir_3 [label="Vertragsbasierte Programmierung", width=3]
+    }
+    c_point_3 -> d_dir_3
+
+    {rank=same
+      c_point_4 [shape=point]
+      d_dir_4 [label="Fehlertolerante Programmierung", width=3]
+    }
+    c_point_4 -> d_dir_4
+
+    {rank=same
+      c_point_5 [shape=point]
+      d_dir_5 [label="Portabilität", width=3]
+    }
+    c_point_5 -> d_dir_5
+
+    {rank=same
+      c_point_6 [shape=point]
+      d_dir_6 [label="Dokumentation", width=3]
+    }
+    c_point_6 -> d_dir_6
+
+    {rank=same
+      b_point_2 [shape=point]
+      c_dir_2 [label="Analytische Qualitätssicherung", width=3]
+    }
+    b_point_2 -> c_dir_2
+    b_point_1 -> b_point_2 [arrowhead=none minlen=7]
+
+    c_dir_1 -> c_point_1 -> c_point_2 -> c_point_3 -> c_point_4 -> c_point_5 -> c_point_6 [arrowhead=none]
+}

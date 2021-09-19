@@ -59,6 +59,17 @@ TBD
 
 Add descriptions to all of them, make sure to find a way how to address plagiarizm.
 
+### GraphViz
+
+#### Installation
+
+##### Ubuntu
+
+```bash
+$ sudo apt install graphviz -y
+$ pip install graphviz
+```
+
 ### matplotlib
 
 ### seaborn

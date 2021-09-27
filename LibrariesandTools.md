@@ -1,5 +1,11 @@
 ## Libraries and Tools
 
+- [ ] The section headers are non contiguaous. you shoudl start with a single  `#` than `##` in subsections and so on
+- [ ] create examples for each tool/library including a graohics.
+- [ ] summarize the important features of each framework library
+- [ ]  
+
+
 Most of the libraries/tools below use pip to install. If you do not already have pip installed, here is the code to do so:
 
 #### Linux & MacOS

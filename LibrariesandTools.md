@@ -1,5 +1,6 @@
 ## Libraries and Tools
 
+- [ ] the instalation on windows, and other OSes should use what we already have, e.g. use ENV3. Thus ensrue pip is not the right thing to do. Just point to our documentation.
 - [ ] The section headers are non contiguaous. you shoudl start with a single  `#` than `##` in subsections and so on
 - [ ] create examples for each tool/library including a graohics.
 - [ ] summarize the important features of each framework library

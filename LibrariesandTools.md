@@ -6,6 +6,13 @@
 - [ ] summarize the important features of each framework library
 - [ ]  
 
+- [ ] ipywidgets
+- [ ] jupyter
+- [ ] tqdm
+- [ ] see data vis in https://awesome-python.com/
+
+- [ ] image manipulation
+- [ ] 
 
 Most of the libraries/tools below use pip to install. If you do not already have pip installed, here is the code to do so:
 

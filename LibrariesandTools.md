@@ -51,6 +51,7 @@ popular plotting libraries in Python.
 python -m pip install -U pip
 python - m pip install -U matplotlib
 ```
+
 [^2]
 
 ### Gallery
@@ -82,6 +83,7 @@ ax.legend()
 
 plt.show()
 ```
+
 [^7]
 
 ## seaborn
@@ -205,6 +207,7 @@ Altair is a declarative statistical vizualization library for Python [^3].
 ```bash
 $ pip install altair vega_datasets
 ```
+
 The above line of code only installs a partial version of altair. You
 can find instructions on how to install the master version of Altair
 here:
@@ -235,6 +238,7 @@ alt.Chart(source).mark_bar().encode(
     y='b'
 )
 ```
+
 [^8]
 
 
@@ -383,6 +387,7 @@ collisions = pd.read_csv("https://raw.githubusercontent.com/ResidentMario/missin
 
 msno.bar(collisions.sample(1000))
 ```
+
 [^16]
 
 
@@ -420,6 +425,7 @@ chart = leather.Chart('Dots')
 chart.add_dots(data)
 chart.to_svg('examples/charts/dots.svg')
 ```
+
 [^12]
 
 ## bqplot
@@ -453,6 +459,7 @@ y = np.cumsum(np.random.randn(n))
 plt.plot(x, y)
 plt.show()
 ```
+
 [^10]
 
 ## pandas 
@@ -482,6 +489,7 @@ alt.Chart(source).mark_bar().encode(
     y='b'
 )
 ```
+
 [^8]
 
 ## ipywidgets
@@ -501,7 +509,7 @@ Jupyter consists of two web-based interfaces: JupyterLab and Jupyter
 Notebook. JupyterLab is a development environment for various jupyter
 notebooks code and data. Jupyter Notebook is an open-source
 application that allows users to create and share documents that
-contain live code, equations, vizualization and narrative text.
+contain live code, equations, vizualization and narrative text
 [^13].
 
 ### Installation of JupyterLab 
@@ -545,6 +553,7 @@ import tqdm
 for i in tqdm.trange(int(1e8)):
     pass
 ```
+	
 [^14]
 
 ## image manipulation

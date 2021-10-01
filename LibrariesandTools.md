@@ -83,10 +83,6 @@ popular plotting libraries in Python.
 
 ### Installation
 
-#### From official release (Python)
-
-[^2] CITATION NOT NEEDED
-
 ### Gallery
 
 * https://matplotlib.org/stable/gallery/index.html

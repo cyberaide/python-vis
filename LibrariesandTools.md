@@ -21,6 +21,7 @@ well as comments about functionality of the library.
 | Name | Link | Documentation | Gallery | Features |
 | --- | --- | --- | --- | --- |
 | pandas | [^www-pandas] | TBD | TBD | data frames, uses matplotlib |
+| matplotlib | TBD | TBD | [Gallery](https://matplotlib.org/stable/gallery/index.html) | Features |
 
 ## Installation
 

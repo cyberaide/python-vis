@@ -18,10 +18,10 @@ These tools are summarized in the follwing table where we list the
 name of the tool a link to the documentation, a link to a gallarey, as
 well as comments about functionality of the library.
 
-| Name | Link | Documentation | Gallery | Features |
+| Name | Refernce | Link | Documentation | Gallery | Features |
 | --- | --- | --- | --- | --- |
-| pandas | [^www-pandas] | TBD | TBD | data frames, uses matplotlib |
-| matplotlib | TBD | TBD | [Gallery](https://matplotlib.org/stable/gallery/index.html) | Features |
+| pandas | [^www-pandas] | TBD | TBD | TBD | data frames, uses matplotlib |
+| matplotlib | TBD | TBD | TBD | [Gallery](https://matplotlib.org/stable/gallery/index.html) | Features |
 
 ## Installation
 

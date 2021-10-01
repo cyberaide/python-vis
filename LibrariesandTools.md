@@ -1,47 +1,31 @@
-## Libraries and Tools
+# Libraries and Tools
 
 We will be using the pip command in gitbash on Windows to install the libraries/tools below. This will work if you are using an ENV3 based installation of Python. Please refer to this documentation if you are not familiar with ENV3 based installation: <https://cybertraining-dsc.github.io/docs/tutorial/reu/python/>
-If you do not already have pip installed, here is the code to do so in gitbash:
 
-#### Linux & MacOS
-
-```bash 
-$ python -m ensurepip --upgrade
-```
-
-#### Windows
-
-```bash
-C:> py -m ensurepip --upgrade
-```
-
-
-### GraphViz
+## GraphViz
 
 graphviz is an open source python mod that is used to create graph visualizations as a way of representing structural information as graphs and networks. [^1]
 
 
 
-#### Installation
-
-##### Ubuntu
+### Installation
 
 ```bash
 $ sudo apt install graphviz -y
 $ pip install graphviz
 ```
 
-#### Gallery
+### Gallery
 
 * <https://graphviz.org/gallery/>
 
-### matplotlib
+## matplotlib
 
 Matplotlib is a library in Python for creating static (still figures), animated (moving pictures), and interactive vizualizations such as charts, graphs and scatter plots. It is one of the oldest and most popular plotting libraries in Python. 
 
-#### Installation
+### Installation
 
-##### From official release (Python)
+#### From official release (Python)
 
 ```bash
 python -m pip install -U pip
@@ -49,18 +33,11 @@ python - m pip install -U matplotlib
 ```
 [^2]
 
-##### Ubuntu
-
-```bash
-$ sudo apt-get install python3-matplotlib
-```
-[^2]
-
-#### Gallery
+### Gallery
 
 * https://matplotlib.org/stable/gallery/index.html
 
-#### Matplotlib Stacked Bar Chart Example
+### Matplotlib Stacked Bar Chart Example
 
 ```bash
 import matplotlib.pyplot as plt
@@ -87,21 +64,21 @@ plt.show()
 ```
 [^7]
 
-### seaborn
+## seaborn
 Seaborn is a data vizualization tool in Python based on matplotlib. Seaborn is used for making statistical graphics, Helping you to explore and understand your data with a visual representation. It allows you to focus on the meaning of your plots rather than on the details of drawing them. 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install seaborn
 ```
 
-#### Gallery
+### Gallery
 
  * <https://seaborn.pydata.org/examples/index.html>
 
 
-#### Seaborn Scatterplot Example
+### Seaborn Scatterplot Example
 ```bash
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -124,17 +101,17 @@ sns.scatterplot(x="carat", y="price",
 ```
 [^6]
 
-### ggplot
+## ggplot
 
 ggplot is run in plotnine, a grammar of graphics package in Python. It is based on the library written in R. 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install plotnine
 ```
 
-#### GGplot bar chart
+### GGplot bar chart
 
 ```bash
 from plotnine.data import mpg
@@ -144,21 +121,21 @@ ggplot(mpg) + aes(x="class") + geom_bar()
 ```
 [^11]
 
-### bokeh
+## bokeh
 
 bokeh is a Python library used mostly for creating interactive vizualization sets. vizualizations created in bakeh are powered by JavaScript without the user having to write any JavaScript themselves. Vizualizations created in bokeh can range from simple line plots to large and complex dashboards containing multiple datasets. 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install bokeh
 ```
 
-#### Gallery
+### Gallery
 
 * <https://docs.bokeh.org/en/latest/docs/gallery.html#gallery>
 
-#### Bokeh Stacked Bar Chart Example
+### Bokeh Stacked Bar Chart Example
 
 ```bash
 from bokeh.plotting import figure, show
@@ -188,24 +165,24 @@ p.legend.orientation = "horizontal"
 show(p)
 ```
 
-### altair
+## altair
 
 Altair is a declarative statistical vizualization library for Python. [^3]
 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install altair vega_datasets
 ```
 The above line of code only installs a partial version of altair. You can find instructions on how to install the master version of Altair here: * https://altair-viz.github.io/getting_started/installation.html
 
-#### Gallery
+### Gallery
 
 * https://altair-viz.github.io/gallery/index.html
 
 
-#### Altair Bar Chart Example
+### Altair Bar Chart Example
 
 This example uses pandas in conjunction with altair, pandas installation is referred to later on this page. 
 
@@ -226,35 +203,35 @@ alt.Chart(source).mark_bar().encode(
 [^8]
 
 
-### pygal
+## pygal
 
 pygal is a dynamic Scalable Vector Graphics (SVG) library in Python. 
 
-#### Installation
+### Installation
 
 ```bash
 pip install pygal
 ```
 
-#### Gallery
+### Gallery
 
 * <http://www.pygal.org/en/latest/index.html>
 
-### plotly
+## plotly
 
 plotly is a graphing library in Python that is used to make interactive, publication quality graphs. It is built on top of plotly's Javascript library and supports over 40 chart types. 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install plotly==5.3.1
 ```
 
-#### Gallery (basic charts)
+### Gallery (basic charts)
 
 * <https://plotly.com/python/basic-charts/>
 
-#### Plotly Stacked Bar Chart Example
+### Plotly Stacked Bar Chart Example
 
 ```bash
 import plotly.graph_objects as go
@@ -270,13 +247,13 @@ fig.show()
 ```
 
 
-### geoplotlib
+## geoplotlib
 
 geoplotlib is a Python toolkit for creating vizualization of geographical data. It can be used to make maps, spatial graphs, etc. 
 
-#### Installation
+### Installation
 
-##### Required packages for geoplotlib:
+#### Required packages for geoplotlib:
 * pip
 * numpy
 * pyglet
@@ -285,25 +262,25 @@ geoplotlib is a Python toolkit for creating vizualization of geographical data. 
 pip3 install geoplotlib
 ```
 
-#### Examples (dot density and spatial graph)
+### Examples (dot density and spatial graph)
 
 * <https://www.pluralsight.com/guides/building-geoplots-with-geoplotlib> 
 
 
-#### geoplotlib Dot Density Map Example
+### geoplotlib Dot Density Map Example
 
 
-### gleam
+## gleam
 
 Gleam allows a user to make interactive web interface versions of plots and graphs. A user can control a specified number of inputs and you can use any sort of Python graphing library to plot those inputs. Gleam provides the web interface that allows anyone to control the data in real time. 
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install gleam
 ```
 
-#### Gleam Interactive Scatter Plot Example
+### Gleam Interactive Scatter Plot Example
 
 ```bash
 from wtforms import fields
@@ -336,63 +313,80 @@ ScatterPage.run()
 [^9]
 
 
-### missingno
+## missingno
 
 missingno provides a series of visualizations to help users understand the presence and distribution of missing data within the pandas datafram, which we will discuss later. [^4] From the plots created using missingno, users can identify where missing values occur, if they are correlated, etc. 
 
-#### Installation
+### Installation
 
 ```bash 
 pip install missingno
 ```
 
-### leather
+### missingno Bar Example
+
+This example uses data from the NYPD Motor Vehicle Collisions Dataset. [^15]
+
+```bash
+import pandas as pd
+import missingno as msno
+%matplotlib inline
+
+# importing the dataset from 
+collisions = pd.read_csv("https://raw.githubusercontent.com/ResidentMario/missingno-data/master/nyc_collision_factors.csv")
+
+msno.bar(collisions.sample(1000))
+```
+[^16]
+
+
+## leather
 
 leather is a Python library that outputs simple data visualizations. Leather allows you to graph your data without having to worry about anything fancy. 
 
-#### Installation
+### Installation
 
 ```bash
 pip install leather
 ```
 
-#### Gallery 
+### Gallery 
 
 * <https://leather.readthedocs.io/en/0.3.3/examples.html>
 
-#### Leather Bar Chart Example
+### Leather Bar Chart Example
 
 ```bash
 import leather
 
 data = [
-    ('G1', 25),
-    ('G2', 32),
-    ('G3', 34),
-    ('G4', 20),
-    ('G5', 25)
+    (0, 3),
+    (4, 5),
+    (7, 9),
+    (8, 4)
 ]
 
 chart = leather.Chart('Dots')
-chart.add_columns(data)
+chart.add_dots(data)
 chart.to_svg('examples/charts/dots.svg')
 ```
+[^12]
 
-### bqplot
+## bqplot
 
 bqplot is a 2-D interactive visualization library in the Jupyter Notebook. In bqplot, all components are interactive, allowing the user to integrate visualization s with other Jupyter interactive widgets to create integrated GUIs with a few lines of Python code. [^5]
 
-#### Installation
+### Installation
 
 ```bash
 $ pip install bqplot
 ```
 
-#### Gallery
+### Gallery
 
 * <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
 
-#### Bqplot Line Chart Example
+### Bqplot Line Chart Example
 
 ```bash
 import numpy as np
@@ -408,17 +402,17 @@ plt.show()
 ```
 [^10]
 
-### pandas 
+## pandas 
 
 pandas is an open source data analysis and manipulation tool. It is build on top of the Python language.
 
-#### Installation/using pandas
+### Installation/using pandas
 
 ```bash
 import pandas
 ```
 
-#### Pandas Bar Chart Example using Altair
+### Pandas Bar Chart Example using Altair
 
 ```bash
 import altair as alt
@@ -436,8 +430,68 @@ alt.Chart(source).mark_bar().encode(
 ```
 [^8]
 
+## ipywidgets
 
-## Resources
+ipywidgets are HTML-interactive widgets used for Jupyter notebooks to help users visualize changes in data. 
+
+### Installation
+
+```bash
+pip install ipywidgets
+```
+
+## jupyter
+
+Jupyter consists of two web-based interfaces: JupyterLab and Jupyter Notebook. JupyterLab is a development environment for various jupyter notebooks code and data. Jupyter Notebook is an open-source application that allows users to create and share documents that contain live code, equations, vizualization and narrative text. 
+
+[^13]
+
+### Installation of JupyterLab 
+
+```bash
+$ pip install jupyterlab
+```
+
+### Running JupyterLab
+
+```bash
+$ jupyter-lab
+```
+
+### Installation of Jupyter Notebook
+
+```bash
+$ pip install notebook
+```
+
+### Running Jupyter Notebook
+
+```bash
+$ jupyter notebook
+```
+
+## tqdm
+
+tqdm is a Python library that is used for creating progress meters/bars
+
+### Installation
+
+```bash
+$ pip install tqdm
+```
+
+### tqdm simple example
+
+```bash
+import tqdm
+for i in tqdm.trange(int(1e8)):
+    pass
+```
+[^14]
+
+## image manipulation
+
+# Resources
 [^1]: * <https://graphviz.org/>
 [^2]: * <https://matplotlib.org/stable/users/installing.html>
 [^3]: * <https://altair-viz.github.io/>
@@ -449,3 +503,8 @@ alt.Chart(source).mark_bar().encode(
 [^9]: * <https://github.com/dgrtwo/gleam>
 [^10]: * <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
 [^11]: * <https://realpython.com/ggplot-python/#plotting-data-using-python-and-ggplot>
+[^12]: * <https://leather.readthedocs.io/en/0.3.3/examples.html>
+[^13]: * <https://jupyter.org/>
+[^14]: * <https://github.com/tqdm/tqdm/blob/master/examples/simple_examples.py>
+[^15]: * <https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95>
+[^16]: * <https://github.com/ResidentMario/missingno>

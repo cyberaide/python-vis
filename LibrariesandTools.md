@@ -18,6 +18,10 @@ These tools are summarized in the follwing table where we list the
 name of the tool a link to the documentation, a link to a gallarey, as
 well as comments about functionality of the library.
 
+| Name | Link | Documentation | Gallery | Features |
+| --- | --- | --- | --- | --- |
+| pandas | [^www-pandas] | TBD | TBD | data frames, uses matplotlib |
+
 ## Installation
 
 In order for simplifying the instalation we will provide here the
@@ -487,11 +491,11 @@ for i in tqdm.trange(int(1e8)):
 ## Assignments
 
 1. Fix the citation issues for codes
-1. make sure you define an uniform example tha you use in all tools
-2. Please check in all working code intot the repository with nice
+2. make sure you define an uniform example tha you use in all tools
+3. Please check in all working code intot the repository with nice
    nameing scheme such as `pandas_barchart.py` Use the url to that
    code in your documentation above the code.
-1. Add a section `## Image Manipulation`
+4. Add a section `## Image Manipulation`
 
 ## Resources
 
@@ -524,3 +528,5 @@ for i in tqdm.trange(int(1e8)):
 [^15]: <https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95>
 
 [^16]: <https://github.com/ResidentMario/missingno>
+
+[^www-pandas]: Missing

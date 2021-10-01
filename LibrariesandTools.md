@@ -1,4 +1,4 @@
-# Libraries and Tools
+# Visualization Libraries and Tools
 
 TODO: AS WE WILL REPLACE FOOTNOTES WITH PROPER CITATIOPNS FOOTNOTS CAN NOT
 BE BEHIND A DO THE MUST BEE BEFORE THE DOT.
@@ -9,25 +9,66 @@ will be deleted automatically. so make sure they are used if you add them
 TODO: A CITATION CAN NOT BE BEHIND A cod, it must be before and used
 in a proper centence
 
-We will be using the pip command in gitbash on Windows to install the
-libraries/tools below. This will work if you are using an ENV3 based
-installation of Python. Please refer to this documentation if you are
+
+In this section we will showcase a number of visualization tools that
+makes it easy to display data and also allow for data analysis while
+using graphical means.
+
+These tools are summarized in the follwing table where we list the
+name of the tool a link to the documentation, a link to a gallarey, as
+well as comments about functionality of the library.
+
+## Installation
+
+In order for simplifying the instalation we will provide here the
+instalation commands for all libraries we describe. If you do not want
+to install the one or the other library, please exclude the
+instalation. As we focus on Python tools, most libraries can be
+installed just with `pip`. However some do require other support
+packages. We have integrated also them into our quick instalation
+guide.
+
+At this time we only provde instalations for Unbuntu. Please provide
+us with updates to the instalations for other OS.
+
+In case you use Windows, we assume you use gitbash so that the
+differences between Linux and Windows are minimal We Will be using a
+python virtualenv on all systems as to avoid compatibility issues that
+may arise unexpectetly.  Please refer to this documentation if you are
 not familiar with ENV3 based installation:
-<https://cybertraining-dsc.github.io/docs/tutorial/reu/python/>
+
+* <https://cybertraining-dsc.github.io/docs/tutorial/reu/python/>
+
+```bash
+$ pip install numpy
+$ pip install matplotlib
+$ sudo apt install graphviz -y # Install the grapghviz binary
+$ pip install graphviz
+$ pip install seaborn
+$ pip install plotnine         # Install ggplot
+$ pip install bokeh
+$ pip install pygal
+$ pip install plotly
+$ pip install altair vega_datasets   # install altair,
+                                     #  but also test data
+$ pip install pyglet           # used for geoplotlib (is this not in requirements?)
+$ pip install geoplotlib
+$ pip install gleam
+$ pip install missingno
+$ pip install bqplot
+$ pip install pandas
+$ pip install jupyterlab
+$ pip install notebook
+$ pip install ipywidgets
+$ pip install tqdm
+```
+
 
 ## GraphViz
 
 graphviz is an open source python mod that is used to create graph
 visualizations as a way of representing structural information as
 graphs and networks [^1].
-
-
-### Installation
-
-```bash
-$ sudo apt install graphviz -y
-$ pip install graphviz
-```
 
 ### Gallery
 
@@ -45,11 +86,6 @@ popular plotting libraries in Python.
 #### From official release (Python)
 
 [^2] CITATION NOT NEEDED
-
-```bash
-python -m pip install -U pip
-python - m pip install -U matplotlib
-```
 
 ### Gallery
 
@@ -93,12 +129,6 @@ you to explore and understand your data with a visual
 representation. It allows you to focus on the meaning of your plots
 rather than on the details of drawing them.
 
-### Installation
-
-```bash
-$ pip install seaborn
-```
-
 ### Gallery
 
  * <https://seaborn.pydata.org/examples/index.html>
@@ -135,12 +165,6 @@ sns.scatterplot(x="carat", y="price",
 ggplot is run in plotnine, a grammar of graphics package in Python. It
 is based on the library written in R.
 
-### Installation
-
-```bash
-$ pip install plotnine
-```
-
 ### GGplot bar chart
 
 PLEASE INVENT YOUR OWN [^11] 
@@ -160,12 +184,6 @@ vizualization sets. vizualizations created in bakeh are powered by
 JavaScript without the user having to write any JavaScript
 themselves. Vizualizations created in bokeh can range from simple line
 plots to large and complex dashboards containing multiple datasets.
-
-### Installation
-
-```bash
-$ pip install bokeh
-```
 
 ### Gallery
 
@@ -208,12 +226,6 @@ show(p)
 Altair is a declarative statistical vizualization library for Python [^3].
 
 
-### Installation
-
-```bash
-$ pip install altair vega_datasets
-```
-
 The above line of code only installs a partial version of altair. You
 can find instructions on how to install the master version of Altair
 here:
@@ -254,11 +266,6 @@ alt.Chart(source).mark_bar().encode(
 
 pygal is a dynamic Scalable Vector Graphics (SVG) library in Python. 
 
-### Installation
-
-```bash
-pip install pygal
-```
 
 ### Gallery
 
@@ -269,12 +276,6 @@ pip install pygal
 plotly is a graphing library in Python that is used to make
 interactive, publication quality graphs. It is built on top of
 plotly's Javascript library and supports over 40 chart types.
-
-### Installation
-
-```bash
-$ pip install plotly==5.3.1
-```
 
 ### Gallery (basic charts)
 
@@ -303,17 +304,6 @@ fig.show()
 geoplotlib is a Python toolkit for creating vizualization of
 geographical data. It can be used to make maps, spatial graphs, etc.
 
-### Installation
-
-#### Required packages for geoplotlib:
-* pip
-* numpy
-* pyglet
-
-```bash
-pip3 install geoplotlib
-```
-
 ### Examples (dot density and spatial graph)
 
 * <https://www.pluralsight.com/guides/building-geoplots-with-geoplotlib> 
@@ -329,12 +319,6 @@ plots and graphs. A user can control a specified number of inputs and
 you can use any sort of Python graphing library to plot those
 inputs. Gleam provides the web interface that allows anyone to control
 the data in real time.
-
-### Installation
-
-```bash
-$ pip install gleam
-```
 
 ### Gleam Interactive Scatter Plot Example
 
@@ -379,15 +363,11 @@ datafram, which we will discuss later [^4]. From the plots created
 using missingno, users can identify where missing values occur, if
 they are correlated, etc.
 
-### Installation
-
-```bash 
-pip install missingno
-```
-
 ### missingno Bar Example
 
 This example uses data from the NYPD Motor Vehicle Collisions Dataset [^15].
+
+[^16]
 
 ```bash
 import pandas as pd
@@ -400,45 +380,7 @@ collisions = pd.read_csv("https://raw.githubusercontent.com/ResidentMario/missin
 msno.bar(collisions.sample(1000))
 ```
 
-[^16]
 
-
-## leather
-
-TODO: unimportant. Remove
-
-leather is a Python library that outputs simple data
-visualizations. Leather allows you to graph your data without having
-to worry about anything fancy.
-
-### Installation
-
-```bash
-pip install leather
-```
-
-### Gallery 
-
-* <https://leather.readthedocs.io/en/0.3.3/examples.html>
-
-### Leather Bar Chart Example
-
-```bash
-import leather
-
-data = [
-    (0, 3),
-    (4, 5),
-    (7, 9),
-    (8, 4)
-]
-
-chart = leather.Chart('Dots')
-chart.add_dots(data)
-chart.to_svg('examples/charts/dots.svg')
-```
-
-[^12]
 
 ## bqplot
 
@@ -446,12 +388,6 @@ bqplot is a 2-D interactive visualization library in the Jupyter
 Notebook. In bqplot, all components are interactive, allowing the user
 to integrate visualization s with other Jupyter interactive widgets to
 create integrated GUIs with a few lines of Python code [^5].
-
-### Installation
-
-```bash
-$ pip install bqplot
-```
 
 ### Gallery
 
@@ -478,12 +414,6 @@ plt.show()
 
 pandas is an open source data analysis and manipulation tool. It is
 build on top of the Python language.
-
-### Installation/using pandas
-
-```bash
-import pandas
-```
 
 ### Pandas Bar Chart Example using Altair
 
@@ -513,9 +443,7 @@ help users visualize changes in data.
 
 ### Installation
 
-```bash
-pip install ipywidgets
-```
+Do we have to configure jupyter? jupyter-lab
 
 ## jupyter
 
@@ -528,12 +456,6 @@ contain live code, equations, vizualization and narrative text
 
 TBD: DIFFERENCE NOT CLEAR
 
-### Installation of JupyterLab and Notebook
-
-```bash
-$ pip install jupyterlab
-$ pip install notebook
-```
 
 ### Running JupyterLab
 
@@ -553,9 +475,7 @@ tqdm is a Python library that is used for creating progress meters/bars.
 
 ### Installation
 
-```bash
-$ pip install tqdm
-```
+There may be a special version and use for jupyter vs regular
 
 ### tqdm simple example
 
@@ -600,8 +520,6 @@ for i in tqdm.trange(int(1e8)):
 [^10]: <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
 
 [^11]: <https://realpython.com/ggplot-python/#plotting-data-using-python-and-ggplot>
-
-[^12]: <https://leather.readthedocs.io/en/0.3.3/examples.html>
 
 [^13]: <https://jupyter.org/>
 

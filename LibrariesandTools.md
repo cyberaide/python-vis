@@ -1,10 +1,27 @@
 # Libraries and Tools
 
-We will be using the pip command in gitbash on Windows to install the libraries/tools below. This will work if you are using an ENV3 based installation of Python. Please refer to this documentation if you are not familiar with ENV3 based installation: <https://cybertraining-dsc.github.io/docs/tutorial/reu/python/>
+TODO: AS WE WILL REPLACE FOOTNOTES WITH PROPER CITATIOPNS FOOTNOTS CAN NOT
+BE BEHIND A DO THE MUST BEE BEFORE THE DOT.
+
+TODO: any citation that is not listed as citation in the main text
+will be deleted automatically. so make sure they are used if you add them
+
+TODO: A CITATION CAN NOT BE BEHIND A cod, it must be before and used
+in a proper centence
+
+We will be using the pip command in gitbash on Windows to install the
+libraries/tools below. This will work if you are using an ENV3 based
+installation of Python. Please refer to this documentation if you are
+not familiar with ENV3 based installation:
+<https://cybertraining-dsc.github.io/docs/tutorial/reu/python/>
 
 ## GraphViz
 
-graphviz is an open source python mod that is used to create graph visualizations as a way of representing structural information as graphs and networks. [^1]
+graphviz is an open source python mod that is used to create graph
+visualizations as a way of representing structural information as
+graphs and networks [^1].
+
+
 
 
 
@@ -21,7 +38,10 @@ $ pip install graphviz
 
 ## matplotlib
 
-Matplotlib is a library in Python for creating static (still figures), animated (moving pictures), and interactive vizualizations such as charts, graphs and scatter plots. It is one of the oldest and most popular plotting libraries in Python. 
+Matplotlib is a library in Python for creating static (still figures),
+animated (moving pictures), and interactive vizualizations such as
+charts, graphs and scatter plots. It is one of the oldest and most
+popular plotting libraries in Python.
 
 ### Installation
 
@@ -65,7 +85,12 @@ plt.show()
 [^7]
 
 ## seaborn
-Seaborn is a data vizualization tool in Python based on matplotlib. Seaborn is used for making statistical graphics, Helping you to explore and understand your data with a visual representation. It allows you to focus on the meaning of your plots rather than on the details of drawing them. 
+
+Seaborn is a data vizualization tool in Python based on
+matplotlib. Seaborn is used for making statistical graphics, Helping
+you to explore and understand your data with a visual
+representation. It allows you to focus on the meaning of your plots
+rather than on the details of drawing them.
 
 ### Installation
 
@@ -103,7 +128,8 @@ sns.scatterplot(x="carat", y="price",
 
 ## ggplot
 
-ggplot is run in plotnine, a grammar of graphics package in Python. It is based on the library written in R. 
+ggplot is run in plotnine, a grammar of graphics package in Python. It
+is based on the library written in R.
 
 ### Installation
 
@@ -123,7 +149,11 @@ ggplot(mpg) + aes(x="class") + geom_bar()
 
 ## bokeh
 
-bokeh is a Python library used mostly for creating interactive vizualization sets. vizualizations created in bakeh are powered by JavaScript without the user having to write any JavaScript themselves. Vizualizations created in bokeh can range from simple line plots to large and complex dashboards containing multiple datasets. 
+bokeh is a Python library used mostly for creating interactive
+vizualization sets. vizualizations created in bakeh are powered by
+JavaScript without the user having to write any JavaScript
+themselves. Vizualizations created in bokeh can range from simple line
+plots to large and complex dashboards containing multiple datasets.
 
 ### Installation
 
@@ -167,7 +197,7 @@ show(p)
 
 ## altair
 
-Altair is a declarative statistical vizualization library for Python. [^3]
+Altair is a declarative statistical vizualization library for Python [^3].
 
 
 ### Installation
@@ -175,7 +205,11 @@ Altair is a declarative statistical vizualization library for Python. [^3]
 ```bash
 $ pip install altair vega_datasets
 ```
-The above line of code only installs a partial version of altair. You can find instructions on how to install the master version of Altair here: * https://altair-viz.github.io/getting_started/installation.html
+The above line of code only installs a partial version of altair. You
+can find instructions on how to install the master version of Altair
+here:
+
+* https://altair-viz.github.io/getting_started/installation.html
 
 ### Gallery
 
@@ -184,7 +218,8 @@ The above line of code only installs a partial version of altair. You can find i
 
 ### Altair Bar Chart Example
 
-This example uses pandas in conjunction with altair, pandas installation is referred to later on this page. 
+This example uses pandas in conjunction with altair, pandas
+installation is referred to later on this page.
 
 ```bash
 import altair as alt
@@ -219,7 +254,9 @@ pip install pygal
 
 ## plotly
 
-plotly is a graphing library in Python that is used to make interactive, publication quality graphs. It is built on top of plotly's Javascript library and supports over 40 chart types. 
+plotly is a graphing library in Python that is used to make
+interactive, publication quality graphs. It is built on top of
+plotly's Javascript library and supports over 40 chart types.
 
 ### Installation
 
@@ -249,7 +286,8 @@ fig.show()
 
 ## geoplotlib
 
-geoplotlib is a Python toolkit for creating vizualization of geographical data. It can be used to make maps, spatial graphs, etc. 
+geoplotlib is a Python toolkit for creating vizualization of
+geographical data. It can be used to make maps, spatial graphs, etc.
 
 ### Installation
 
@@ -272,7 +310,11 @@ pip3 install geoplotlib
 
 ## gleam
 
-Gleam allows a user to make interactive web interface versions of plots and graphs. A user can control a specified number of inputs and you can use any sort of Python graphing library to plot those inputs. Gleam provides the web interface that allows anyone to control the data in real time. 
+Gleam allows a user to make interactive web interface versions of
+plots and graphs. A user can control a specified number of inputs and
+you can use any sort of Python graphing library to plot those
+inputs. Gleam provides the web interface that allows anyone to control
+the data in real time.
 
 ### Installation
 
@@ -315,7 +357,11 @@ ScatterPage.run()
 
 ## missingno
 
-missingno provides a series of visualizations to help users understand the presence and distribution of missing data within the pandas datafram, which we will discuss later. [^4] From the plots created using missingno, users can identify where missing values occur, if they are correlated, etc. 
+missingno provides a series of visualizations to help users understand
+the presence and distribution of missing data within the pandas
+datafram, which we will discuss later [^4]. From the plots created
+using missingno, users can identify where missing values occur, if
+they are correlated, etc.
 
 ### Installation
 
@@ -325,7 +371,7 @@ pip install missingno
 
 ### missingno Bar Example
 
-This example uses data from the NYPD Motor Vehicle Collisions Dataset. [^15]
+This example uses data from the NYPD Motor Vehicle Collisions Dataset [^15].
 
 ```bash
 import pandas as pd
@@ -342,7 +388,11 @@ msno.bar(collisions.sample(1000))
 
 ## leather
 
-leather is a Python library that outputs simple data visualizations. Leather allows you to graph your data without having to worry about anything fancy. 
+TODO: unimportant. Remove
+
+leather is a Python library that outputs simple data
+visualizations. Leather allows you to graph your data without having
+to worry about anything fancy.
 
 ### Installation
 
@@ -374,7 +424,10 @@ chart.to_svg('examples/charts/dots.svg')
 
 ## bqplot
 
-bqplot is a 2-D interactive visualization library in the Jupyter Notebook. In bqplot, all components are interactive, allowing the user to integrate visualization s with other Jupyter interactive widgets to create integrated GUIs with a few lines of Python code. [^5]
+bqplot is a 2-D interactive visualization library in the Jupyter
+Notebook. In bqplot, all components are interactive, allowing the user
+to integrate visualization s with other Jupyter interactive widgets to
+create integrated GUIs with a few lines of Python code [^5].
 
 ### Installation
 
@@ -404,7 +457,8 @@ plt.show()
 
 ## pandas 
 
-pandas is an open source data analysis and manipulation tool. It is build on top of the Python language.
+pandas is an open source data analysis and manipulation tool. It is
+build on top of the Python language.
 
 ### Installation/using pandas
 
@@ -432,7 +486,8 @@ alt.Chart(source).mark_bar().encode(
 
 ## ipywidgets
 
-ipywidgets are HTML-interactive widgets used for Jupyter notebooks to help users visualize changes in data. 
+ipywidgets are HTML-interactive widgets used for Jupyter notebooks to
+help users visualize changes in data.
 
 ### Installation
 
@@ -442,9 +497,12 @@ pip install ipywidgets
 
 ## jupyter
 
-Jupyter consists of two web-based interfaces: JupyterLab and Jupyter Notebook. JupyterLab is a development environment for various jupyter notebooks code and data. Jupyter Notebook is an open-source application that allows users to create and share documents that contain live code, equations, vizualization and narrative text. 
-
-[^13]
+Jupyter consists of two web-based interfaces: JupyterLab and Jupyter
+Notebook. JupyterLab is a development environment for various jupyter
+notebooks code and data. Jupyter Notebook is an open-source
+application that allows users to create and share documents that
+contain live code, equations, vizualization and narrative text.
+[^13].
 
 ### Installation of JupyterLab 
 

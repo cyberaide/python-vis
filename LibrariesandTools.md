@@ -47,8 +47,8 @@ popular plotting libraries in Python.
 [^2] CITATION NOT NEEDED
 
 ```bash
-python -m pip install -U pip
-python - m pip install -U matplotlib
+pip install -U pip
+pip install -U matplotlib
 ```
 
 ### Gallery

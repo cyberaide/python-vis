@@ -574,34 +574,34 @@ for i in tqdm.trange(int(1e8)):
 
 # Resources
 
-[^1]: * <https://graphviz.org/>
+[^1]: <https://graphviz.org/>
 
-[^2]: * <https://matplotlib.org/stable/users/installing.html>
+[^2]: <https://matplotlib.org/stable/users/installing.html>
 
-[^3]: * <https://altair-viz.github.io/>
+[^3]: <https://altair-viz.github.io/>
 
-[^4]: * <https://towardsdatascience.com/using-the-missingno-python-library-to-identify-and-visualise-missing-data-prior-to-machine-learning-34c8c5b5f009>
+[^4]: <https://towardsdatascience.com/using-the-missingno-python-library-to-identify-and-visualise-missing-data-prior-to-machine-learning-34c8c5b5f009>
 
-[^5]: * <https://github.com/bqplot/bqplot>
+[^5]: <https://github.com/bqplot/bqplot>
 
-[^6]: * <https://seaborn.pydata.org/examples/different_scatter_variables.html>
+[^6]: <https://seaborn.pydata.org/examples/different_scatter_variables.html>
 
-[^7]: * <https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html#sphx-glr-gallery-lines-bars-and-markers-bar-stacked-py>
+[^7]: <https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html#sphx-glr-gallery-lines-bars-and-markers-bar-stacked-py>
 
-[^8]: * <https://altair-viz.github.io/gallery/simple_bar_chart.html>
+[^8]: <https://altair-viz.github.io/gallery/simple_bar_chart.html>
 
-[^9]: * <https://github.com/dgrtwo/gleam>
+[^9]: <https://github.com/dgrtwo/gleam>
 
-[^10]: * <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
+[^10]: <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
 
-[^11]: * <https://realpython.com/ggplot-python/#plotting-data-using-python-and-ggplot>
+[^11]: <https://realpython.com/ggplot-python/#plotting-data-using-python-and-ggplot>
 
-[^12]: * <https://leather.readthedocs.io/en/0.3.3/examples.html>
+[^12]: <https://leather.readthedocs.io/en/0.3.3/examples.html>
 
-[^13]: * <https://jupyter.org/>
+[^13]: <https://jupyter.org/>
 
-[^14]: * <https://github.com/tqdm/tqdm/blob/master/examples/simple_examples.py>
+[^14]: <https://github.com/tqdm/tqdm/blob/master/examples/simple_examples.py>
 
-[^15]: * <https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95>
+[^15]: <https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95>
 
-[^16]: * <https://github.com/ResidentMario/missingno>
+[^16]: <https://github.com/ResidentMario/missingno>

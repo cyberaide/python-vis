@@ -526,22 +526,19 @@ application that allows users to create and share documents that
 contain live code, equations, vizualization and narrative text
 [^13].
 
-### Installation of JupyterLab 
+TBD: DIFFERENCE NOT CLEAR
+
+### Installation of JupyterLab and Notebook
 
 ```bash
 $ pip install jupyterlab
+$ pip install notebook
 ```
 
 ### Running JupyterLab
 
 ```bash
 $ jupyter-lab
-```
-
-### Installation of Jupyter Notebook
-
-```bash
-$ pip install notebook
 ```
 
 ### Running Jupyter Notebook
@@ -552,7 +549,7 @@ $ jupyter notebook
 
 ## tqdm
 
-tqdm is a Python library that is used for creating progress meters/bars
+tqdm is a Python library that is used for creating progress meters/bars.
 
 ### Installation
 
@@ -562,17 +559,25 @@ $ pip install tqdm
 
 ### tqdm simple example
 
+PLAEASE INVENT YOUR OWN [^14]
+
 ```bash
 import tqdm
 for i in tqdm.trange(int(1e8)):
     pass
 ```
 	
-[^14]
 
-## image manipulation
+## Assignments
 
-# Resources
+1. Fix the citation issues for codes
+1. make sure you define an uniform example tha you use in all tools
+2. Please check in all working code intot the repository with nice
+   nameing scheme such as `pandas_barchart.py` Use the url to that
+   code in your documentation above the code.
+1. Add a section `## Image Manipulation`
+
+## Resources
 
 [^1]: <https://graphviz.org/>
 

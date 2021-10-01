@@ -2,8 +2,6 @@
 
 Gregor von Laszewski and Jacqueline Parero
 
-test
-
 ## TODO
 
 Gregors Initial NOtes

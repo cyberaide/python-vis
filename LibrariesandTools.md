@@ -22,9 +22,6 @@ visualizations as a way of representing structural information as
 graphs and networks [^1].
 
 
-
-
-
 ### Installation
 
 ```bash
@@ -47,18 +44,20 @@ popular plotting libraries in Python.
 
 #### From official release (Python)
 
+[^2] CITATION NOT NEEDED
+
 ```bash
 python -m pip install -U pip
 python - m pip install -U matplotlib
 ```
-
-[^2]
 
 ### Gallery
 
 * https://matplotlib.org/stable/gallery/index.html
 
 ### Matplotlib Stacked Bar Chart Example
+
+[^7] PLEASE INVENT YOUR OWN
 
 ```bash
 import matplotlib.pyplot as plt
@@ -84,7 +83,7 @@ ax.legend()
 plt.show()
 ```
 
-[^7]
+
 
 ## seaborn
 
@@ -106,6 +105,9 @@ $ pip install seaborn
 
 
 ### Seaborn Scatterplot Example
+
+PLEASE INVENT YOUR OWN [^6] 
+
 ```bash
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -126,7 +128,7 @@ sns.scatterplot(x="carat", y="price",
                 sizes=(1, 8), linewidth=0,
                 data=diamonds, ax=ax)
 ```
-[^6]
+
 
 ## ggplot
 
@@ -141,13 +143,15 @@ $ pip install plotnine
 
 ### GGplot bar chart
 
-```bash
+PLEASE INVENT YOUR OWN [^11] 
+
+```python
 from plotnine.data import mpg
 from plotnine import ggplot, aes, geom_bar
 
 ggplot(mpg) + aes(x="class") + geom_bar()
 ```
-[^11]
+
 
 ## bokeh
 
@@ -168,6 +172,8 @@ $ pip install bokeh
 * <https://docs.bokeh.org/en/latest/docs/gallery.html#gallery>
 
 ### Bokeh Stacked Bar Chart Example
+
+DID YOU INVENT THIS OR IS CITATION MISSING
 
 ```bash
 from bokeh.plotting import figure, show
@@ -224,6 +230,8 @@ here:
 This example uses pandas in conjunction with altair, pandas
 installation is referred to later on this page.
 
+PLEASE INVENT YOUR OWN [^8]
+
 ```bash
 import altair as alt
 import pandas as pd
@@ -239,7 +247,7 @@ alt.Chart(source).mark_bar().encode(
 )
 ```
 
-[^8]
+
 
 
 ## pygal
@@ -273,6 +281,8 @@ $ pip install plotly==5.3.1
 * <https://plotly.com/python/basic-charts/>
 
 ### Plotly Stacked Bar Chart Example
+
+IS THIS INVENTED BY YOU?
 
 ```bash
 import plotly.graph_objects as go
@@ -328,6 +338,8 @@ $ pip install gleam
 
 ### Gleam Interactive Scatter Plot Example
 
+PLEASE INVET YOUR OWN [^9]
+
 ```bash
 from wtforms import fields
 from ggplot import *
@@ -356,7 +368,7 @@ class ScatterPage(Page):
 
 ScatterPage.run()
 ```
-[^9]
+
 
 
 ## missingno
@@ -475,6 +487,8 @@ import pandas
 
 ### Pandas Bar Chart Example using Altair
 
+PLEASE INVENT YOUR OWN [^8]
+
 ```bash
 import altair as alt
 import pandas as pd
@@ -490,7 +504,7 @@ alt.Chart(source).mark_bar().encode(
 )
 ```
 
-[^8]
+
 
 ## ipywidgets
 
@@ -559,19 +573,35 @@ for i in tqdm.trange(int(1e8)):
 ## image manipulation
 
 # Resources
+
 [^1]: * <https://graphviz.org/>
+
 [^2]: * <https://matplotlib.org/stable/users/installing.html>
+
 [^3]: * <https://altair-viz.github.io/>
+
 [^4]: * <https://towardsdatascience.com/using-the-missingno-python-library-to-identify-and-visualise-missing-data-prior-to-machine-learning-34c8c5b5f009>
+
 [^5]: * <https://github.com/bqplot/bqplot>
+
 [^6]: * <https://seaborn.pydata.org/examples/different_scatter_variables.html>
+
 [^7]: * <https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html#sphx-glr-gallery-lines-bars-and-markers-bar-stacked-py>
+
 [^8]: * <https://altair-viz.github.io/gallery/simple_bar_chart.html>
+
 [^9]: * <https://github.com/dgrtwo/gleam>
+
 [^10]: * <https://bqplot.readthedocs.io/en/latest/usage.html#examples>
+
 [^11]: * <https://realpython.com/ggplot-python/#plotting-data-using-python-and-ggplot>
+
 [^12]: * <https://leather.readthedocs.io/en/0.3.3/examples.html>
+
 [^13]: * <https://jupyter.org/>
+
 [^14]: * <https://github.com/tqdm/tqdm/blob/master/examples/simple_examples.py>
+
 [^15]: * <https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95>
+
 [^16]: * <https://github.com/ResidentMario/missingno>
